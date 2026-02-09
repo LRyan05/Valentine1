@@ -1,0 +1,106 @@
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    background: linear-gradient(#fb6f92, #ffe5ec);
+    margin: 0;
+    min-height: 100vh;
+    font-family: "Fuzzy Bubbles", sans-serif; 
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    padding: 20px; 
+}
+
+h1 {
+    font-family: "Fuzzy Bubbles", sans-serif;
+    font-size: 55px;
+    font-weight: 700;
+
+    margin-top: 50px; 
+    margin-bottom: 20px; 
+    text-align: center;
+    color: #ffe5ec; 
+}
+
+img {
+    border-radius: 10px;
+    margin-top: -20px; 
+    max-width: 100%; 
+    height: auto;
+}
+
+.buttonContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 55px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+button {
+    font-family: "Fuzzy Bubbles", sans-serif; 
+    font-size: 30px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    color: #ffe5ec;
+    font-weight: bold;
+    transition: transform 0.2s; 
+}
+
+.yesBtn {
+    background-color: #fb6f92;
+}
+
+.noBtn {
+    background-color: #fb6f92;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 40px; 
+        margin-top: 30px;
+    }
+    img {
+        height: 250px; 
+        width: 250px;
+    }
+    .buttonContainer {
+        gap: 30px;
+    }
+    button {
+        font-size: 24px; 
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 30px;
+        margin-top: 20px;
+    }
+    img {
+        height: 200px;
+        width: 200px;
+    }
+    .buttonContainer {
+        gap: 20px;
+    }
+    button {
+        font-size: 20px;
+        padding: 6px 12px;
+    }
+}
